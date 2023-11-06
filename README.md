@@ -1,5 +1,7 @@
 ## Getting Started
 
+`Always use pnpm`
+
 1. Install dependencies with `pnpm i` (first run `corepack enable` to enable pnpm)
 2. Run `pnpm prepare` command to setup [Husky](https://typicode.github.io/husky) pre-commit hooks.
 

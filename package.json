@@ -30,7 +30,9 @@
     "test": "vitest",
     "test:cov": "vitest run --coverage",
     "prepare": "husky install",
-    "prepack": "json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\""
+    "prepack": "json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\"",
+    "link-local": "pnpm link --global && cd node_modules/react && pnpm link --global && cd ../react-dom && pnpm link --global",
+    "unlink-local": "pnpm unlink && cd node_modules/react && pnpm unlink && cd ../react-dom && pnpm unlink"
   },
   "peerDependencies": {
     "react": "18.2.0",

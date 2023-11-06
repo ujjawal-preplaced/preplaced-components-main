@@ -11,7 +11,7 @@ export type ButtonProps = {
 
 export const Button: React.FC<ButtonProps> = ({
   onClick,
-  className = 'bg-yellow-200-500 text-white',
+  className = 'bg-blue-500 text-white',
   ...props
 }: ButtonProps) => {
   const [isLoading, setIsLoading] = useState(false)
